@@ -1,0 +1,25 @@
+using System;
+public class palindrome
+{
+    public static void Main(string[]args)
+    {
+        int i,n,temp,sum=0,r;
+        Console.Write("Enter the Value:");
+        n=int.Parse(Console.ReadLine());
+        temp=n;
+        while(n!=0)
+        {
+            r=n%10;
+            sum=(sum*10)+r;
+            n=n/10;
+        }
+        if(temp==sum)
+        {
+            Console.Write("Palidrome");
+        }
+        else
+        {
+            Console.Write("Not a Palindrome");
+        }
+    }
+}
