@@ -1,0 +1,17 @@
+using System;
+public class Swapping
+{
+    public static void Main(string[]args)
+    {
+        int a,b;
+        Console.Write("Enter the Value of a: ");
+        a= int.Parse(Console.ReadLine());
+        Console.Write("Enter the value of b: ");
+        b= int.Parse(Console.ReadLine());
+        a=a+b;
+        b=a-b;
+        a=a-b;
+        Console.WriteLine("a= "+a);
+        Console.WriteLine("b= "+b);
+    }
+}
