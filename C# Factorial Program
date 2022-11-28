@@ -1,0 +1,16 @@
+using System;
+public class Factorial
+{
+    public static void Main(string[]args)
+    { 
+        int fact=1,i,n;
+        Console.Write("Enter the Value: ");
+        n=int.Parse(Console.ReadLine());
+        for(i=1;i<=n;i++)
+        {
+            fact=fact*i;
+        }
+        Console.Write("Factorial of " +n+ " is:"+fact);
+    }
+    
+}
